@@ -338,8 +338,7 @@ export default function Sobre() {
             <span className="about-eyebrow">SOBRE A MDCON</span>
             <h1>Contabilidade próxima para acompanhar a realidade da sua empresa.</h1>
             <p>
-              A MDCon Assessoria Contábil atua em Palmeira das Missões com uma proposta
-              de atendimento próximo, organizado e voltado às necessidades de cada negócio.
+A MDCon Assessoria Contábil, liderada pelo contador Diego Mafalda, atua em Palmeira das Missões oferecendo soluções contábeis para empresas, empreendedores, produtores rurais e pessoas físicas.
             </p>
           </div>
 
@@ -377,7 +376,7 @@ export default function Sobre() {
         <div className="about-wrap">
           <div className="about-values-head">
             <span className="about-eyebrow">O QUE VALORIZAMOS</span>
-            <h2>Uma relação contábil baseada em confiança e proximidade.</h2>
+            <h2> Proximidade, organização e confiança em cada atendimento.</h2>
             <p>
               Princípios que orientam a forma como a MDCon se relaciona com empresas
               e empreendedores.
