@@ -64,7 +64,7 @@ export default function Home(){return <>
       </div>
       <div className="hero-photo-wrap">
         <div className="hero-photo-card">
-          <Image src="/equipe-mdcon.png" alt="Equipe da MDCon Assessoria Contábil em Palmeira das Missões" fill priority sizes="(max-width: 900px) 100vw, 48vw" className="hero-photo" />
+          <Image src="/mdcon-fachada.png" alt="Equipe da MDCon Assessoria Contábil em Palmeira das Missões" fill priority sizes="(max-width: 900px) 100vw, 48vw" className="hero-photo" />
           <div className="photo-badge"><strong>Equipe MDCon</strong><span>Atendimento próximo e profissional</span></div>
         </div>
       </div>
