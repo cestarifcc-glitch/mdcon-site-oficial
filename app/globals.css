@@ -134,3 +134,13 @@
   .featured-services{grid-template-columns:1fr}
   .featured-card{min-height:auto}
 }
+
+
+/* V5 — fachada no Hero */
+.hero-photo{
+  object-position:center center;
+  filter:contrast(1.03) saturate(1.02);
+}
+@media(max-width:900px){
+  .hero-photo{object-position:center center}
+}
