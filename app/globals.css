@@ -193,3 +193,38 @@
     border-radius:16px;
   }
 }
+
+
+/* V8 — Hero com fachada maior, mantendo a imagem inteira */
+.hero-photo-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-left:18px;
+}
+.hero-photo-card{
+  width:100%;
+  max-width:760px;
+  height:auto;
+  min-height:0;
+  aspect-ratio:680/383;
+  border-radius:20px;
+  overflow:hidden;
+  background:#f4f4f2;
+  box-shadow:0 16px 40px rgba(0,0,0,.08);
+}
+.hero-photo{
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+@media(min-width:901px){
+  .hero-grid{
+    grid-template-columns:minmax(430px,.88fr) minmax(620px,1.12fr);
+    align-items:center;
+    gap:34px;
+  }
+}
+@media(max-width:900px){
+  .hero-photo-wrap{padding-left:0}
+  .hero-photo-card{max-width:none}
+}
