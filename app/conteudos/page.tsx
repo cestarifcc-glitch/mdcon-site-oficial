@@ -36,14 +36,6 @@ const topics = [
   },
 ];
 
-const upcoming = [
-  'Como escolher uma contabilidade para sua empresa?',
-  'O que avaliar antes de abrir uma empresa?',
-  'Quando vale a pena revisar o enquadramento tributário?',
-  'Quais informações organizar para o Imposto de Renda?',
-  'Quais rotinas do departamento pessoal merecem atenção?',
-  'Como a contabilidade pode apoiar o produtor rural?',
-];
 
 export default function Conteudos() {
   return (
@@ -159,52 +151,11 @@ export default function Conteudos() {
           line-height:1.65;
         }
 
-        .content-upcoming{
-          padding:78px 0;
-          background:#fafaf8;
-          border-top:1px solid #efefec;
-          border-bottom:1px solid #efefec;
-        }
 
-        .upcoming-grid{
-          display:grid;
-          grid-template-columns:repeat(2,minmax(0,1fr));
-          gap:14px;
-        }
 
-        .upcoming-item{
-          display:flex;
-          align-items:center;
-          justify-content:space-between;
-          gap:20px;
-          padding:20px 22px;
-          border:1px solid #e5e5e1;
-          border-radius:16px;
-          background:#fff;
-        }
 
-        .upcoming-item strong{
-          font-size:16px;
-          line-height:1.35;
-        }
 
-        .upcoming-item span{
-          flex:none;
-          color:${YELLOW_DARK};
-          font-size:12px;
-          font-weight:900;
-          letter-spacing:.6px;
-        }
 
-        .content-note{
-          margin-top:30px;
-          padding:18px 20px;
-          border-left:4px solid ${YELLOW};
-          background:#fffbea;
-          color:#5f5a42;
-          line-height:1.65;
-          font-size:14px;
-        }
 
         .content-cta{
           padding:82px 0;
@@ -255,10 +206,6 @@ export default function Conteudos() {
             grid-template-columns:1fr 1fr;
           }
 
-          .upcoming-grid{
-            grid-template-columns:1fr;
-          }
-
           .content-cta-box{
             flex-direction:column;
             align-items:flex-start;
@@ -280,7 +227,6 @@ export default function Conteudos() {
           }
 
           .content-section,
-          .content-upcoming,
           .content-cta{
             padding:60px 0;
           }
@@ -316,8 +262,8 @@ export default function Conteudos() {
             <span className="content-eyebrow">TEMAS</span>
             <h2>Assuntos que fazem parte da rotina de empresas e empreendedores.</h2>
             <p>
-             Conteúdos para ajudar empresas, empreendedores e produtores rurais a 
-              compreender melhor temas contábeis, fiscais e empresariais.
+              A MDCon poderá usar este espaço para publicar conteúdos educativos
+              e responder dúvidas frequentes dos clientes.
             </p>
           </div>
 
@@ -333,41 +279,14 @@ export default function Conteudos() {
         </div>
       </section>
 
-      <section className="content-upcoming">
-        <div className="content-wrap">
-          <div className="content-head">
-            <span className="content-eyebrow">PRÓXIMOS CONTEÚDOS</span>
-            <h2>Ideias para começar a construir essa biblioteca.</h2>
-            <p>
-              Estes títulos são sugestões editoriais. Nenhum deles está apresentado
-              como artigo já publicado.
-            </p>
-          </div>
-
-          <div className="upcoming-grid">
-            {upcoming.map((item, index) => (
-              <div className="upcoming-item" key={item}>
-                <strong>{item}</strong>
-                <span>IDEIA {String(index + 1).padStart(2, '0')}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="content-note">
-            Os conteúdos devem ser revisados antes da publicação para garantir
-            que as informações estejam atualizadas e adequadas ao tema abordado.
-          </div>
-        </div>
-      </section>
 
       <section className="content-cta">
         <div className="content-wrap">
           <div className="content-cta-box">
             <div>
-              <h2>Tem uma dúvida contábil e quer falar diretamente com a equipe?</h2>
+              <h2>Precisa de orientação para o seu negócio?</h2>
               <p>
-                Entre em contato com a MDCon. Podemos entender sua necessidade
-                e orientar o próximo passo.
+                Converse com a equipe da MDCon, explique sua necessidade e veja como podemos orientar o próximo passo.
               </p>
             </div>
 
