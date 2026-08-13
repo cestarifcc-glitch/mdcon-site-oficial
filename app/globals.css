@@ -228,3 +228,94 @@
   .hero-photo-wrap{padding-left:0}
   .hero-photo-card{max-width:none}
 }
+
+
+/* V9 — seção de serviços refinada */
+.services-premium{
+  padding:96px 0 104px;
+  background:linear-gradient(180deg,#fff 0%,#fbfbf9 100%);
+  border-top:1px solid #f0f0ee;
+}
+.services-title{max-width:760px;margin-bottom:46px}
+.services-title h2{
+  font-size:clamp(38px,4vw,52px);
+  letter-spacing:-2px;
+  line-height:1.05;
+}
+.services-title p{font-size:17px;max-width:650px;margin-left:auto;margin-right:auto}
+.featured-services{gap:20px}
+.featured-card{
+  min-height:286px;
+  padding:26px 26px 24px;
+  border:1px solid #e7e7e4;
+  background:#fff;
+  border-radius:22px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  overflow:hidden;
+}
+.featured-card:before{
+  content:'';
+  position:absolute;
+  left:0;right:0;top:0;
+  height:4px;
+  background:linear-gradient(90deg,var(--yellow),#e5ad00);
+  opacity:0;
+  transition:.25s;
+}
+.featured-card:hover:before{opacity:1}
+.featured-card:hover{
+  transform:translateY(-7px);
+  border-color:#deded9;
+  box-shadow:0 22px 55px rgba(0,0,0,.09);
+}
+.service-card-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:34px;
+}
+.service-number{
+  font-size:12px;
+  letter-spacing:1.4px;
+  color:#a7a7a0;
+  font-weight:900;
+}
+.featured-card i{
+  margin:0;
+  width:54px;height:54px;
+  border-radius:16px;
+  background:#fff3bf;
+  color:#b78800;
+}
+.featured-card h3{
+  font-size:21px;
+  letter-spacing:-.4px;
+  margin-bottom:12px;
+}
+.featured-card p{
+  font-size:14px;
+  line-height:1.65;
+  color:#676767;
+  margin-bottom:24px;
+}
+.service-more{
+  display:inline-block;
+  font-size:13px;
+  font-weight:900;
+  color:#a77e00;
+}
+.services-all{margin-top:4px;min-width:220px}
+
+@media(max-width:900px){
+  .services-premium{padding:78px 0 86px}
+  .featured-services{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .services-premium{padding:62px 0 70px}
+  .services-title h2{font-size:34px}
+  .featured-services{grid-template-columns:1fr}
+  .featured-card{min-height:240px}
+}
