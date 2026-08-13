@@ -1,23 +1,12 @@
-# MDCon — projeto limpo
+# MDCon — V4
 
-Este ZIP contém apenas UM projeto Next.js.
+Projeto Next.js limpo para a MDCon Assessoria Contábil.
 
-Estrutura principal:
-- app/
-- components/
-- public/
-- package.json
-- tsconfig.json
-- next.config.ts
+Atualizações desta versão:
+- Hero refinado, com título mais equilibrado;
+- melhor enquadramento da foto da equipe;
+- logo oficial com melhor presença no cabeçalho;
+- seção principal de serviços com 4 cards de destaque;
+- responsividade preservada.
 
-Para GitHub/Vercel:
-1. Crie um repositório novo ou apague o conteúdo antigo do repositório.
-2. Envie O CONTEÚDO deste ZIP para a raiz do repositório.
-3. Não crie uma pasta externa chamada "site mdcon".
-4. Na Vercel, o Root Directory/Diretório raiz deve ficar vazio (raiz do repositório).
-5. Framework: Next.js.
-6. Output Directory: automático/vazio.
-
-Imagens:
-- public/equipe-mdcon.png
-- public/logo-mdcon-aprovada.png
+Envie o conteúdo deste ZIP para a raiz do repositório `mdcon-site-oficial`.

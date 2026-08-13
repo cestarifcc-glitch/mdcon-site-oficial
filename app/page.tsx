@@ -33,6 +33,13 @@ const services:[IconName,string,string][] = [
   ['shield','Regularização Empresarial','Auxílio na organização e regularização de situações empresariais.']
 ];
 
+const featuredServices:[IconName,string,string][] = [
+  ['briefcase','Contabilidade Completa','Gestão contábil com organização, acompanhamento e clareza para a empresa.'],
+  ['users','Departamento Pessoal','Apoio nas rotinas de folha, encargos e obrigações trabalhistas.'],
+  ['calculator','Fiscal e Tributário','Acompanhamento fiscal e análise tributária com foco em organização e segurança.'],
+  ['chart','Consultoria Empresarial','Informações e análises contábeis para apoiar decisões do negócio.']
+];
+
 const faqs=[
   ['A MDCon atende MEI?','A MDCon pode orientar empreendedores conforme os serviços contratados e a necessidade de cada negócio.'],
   ['Como trocar de contador?','A troca pode ser organizada de forma segura, com levantamento das informações necessárias e transição dos documentos contábeis.'],
@@ -68,7 +75,7 @@ export default function Home(){return <>
     ([['briefcase','Assessoria contábil','Acompanhamento das principais necessidades contábeis da empresa.'],['target','Orientação empresarial','Informações para ajudar o empresário a tomar decisões com mais segurança.'],['handshake','Atendimento próximo','Uma relação profissional baseada em comunicação e acompanhamento.']] as [IconName,string,string][]).map(x=><article className="trust-card" key={x[1]}><i><Icon name={x[0]}/></i><div><h3>{x[1]}</h3><p>{x[2]}</p></div></article>)}
   </div></div></section>
 
-  <section className="section"><div className="container"><div className="section-head"><span className="eyebrow">SERVIÇOS</span><h2>Soluções contábeis para sua empresa</h2><p>Serviços para apoiar a organização das rotinas contábeis, fiscais e trabalhistas do seu negócio.</p></div><div className="services-grid">{services.map(s=><article className="service-card" key={s[1]}><i><Icon name={s[0]}/></i><h3>{s[1]}</h3><p>{s[2]}</p></article>)}</div><div className="center"><Link className="text-link" href="/servicos">Conheça todos os serviços →</Link></div></div></section>
+  <section className="section services-premium"><div className="container"><div className="section-head"><span className="eyebrow">COMO PODEMOS AJUDAR</span><h2>Soluções completas para o seu negócio</h2><p>Uma estrutura contábil próxima e organizada para acompanhar diferentes necessidades da sua empresa.</p></div><div className="services-grid featured-services">{featuredServices.map(s=><article className="service-card featured-card" key={s[1]}><i><Icon name={s[0]}/></i><div><h3>{s[1]}</h3><p>{s[2]}</p></div></article>)}</div><div className="center"><Link className="text-link" href="/servicos">Ver todos os serviços →</Link></div></div></section>
 
   <section className="dark-section"><div className="container"><div className="section-head light"><span className="eyebrow">MDCon</span><h2>Por que escolher a MDCon?</h2></div><div className="benefits-grid">{
     ([['handshake','Atendimento próximo','Você fala com pessoas que conhecem a realidade da sua empresa.'],['target','Orientação profissional','Informações contábeis para ajudar nas decisões do dia a dia.'],['sliders','Soluções personalizadas','Cada empresa possui necessidades diferentes.'],['shield','Experiência e responsabilidade','Um escritório preparado para cuidar das rotinas contábeis da sua empresa.']] as [IconName,string,string][]).map(x=><article key={x[1]}><i><Icon name={x[0]}/></i><h3>{x[1]}</h3><p>{x[2]}</p></article>)}
