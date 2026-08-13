@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Serviços Contábeis | MDCon',
   description:
-    'Conheça as soluções contábeis da MDCon para empresas, empreendedores e profissionais de Palmeira das Missões e região.',
+    'Conheça os serviços da MDCon em contabilidade, abertura de empresas, escrituração fiscal, departamento pessoal, IRPF, planejamento tributário, produtor rural e certificado digital.',
 };
 
 const YELLOW = '#FFC400';
@@ -19,43 +19,43 @@ const services: Service[] = [
   {
     icon: 'building',
     title: 'Contabilidade Empresarial',
-    text: 'Organização e acompanhamento das informações contábeis da empresa, apoiando a gestão com mais clareza e regularidade.',
+    text: 'Escrituração e acompanhamento contábil para manter a empresa organizada e com informações adequadas à sua rotina.'
   },
   {
     icon: 'briefcase',
-    title: 'Abertura de Empresas',
-    text: 'Orientação para estruturar a abertura do negócio, organizar documentos e compreender os primeiros passos da empresa.',
+    title: 'Constituição e Abertura de Empresas',
+    text: 'Orientação para estruturar a abertura do negócio, organizar documentos e conduzir os primeiros passos da empresa.'
   },
   {
     icon: 'calculator',
-    title: 'Assessoria Fiscal',
-    text: 'Acompanhamento das obrigações fiscais e tributárias, com atenção à rotina e às particularidades de cada empresa.',
+    title: 'Escrituração Fiscal',
+    text: 'Acompanhamento das obrigações fiscais, apuração de tributos e organização das informações tributárias da empresa.'
   },
   {
     icon: 'users',
     title: 'Departamento Pessoal',
-    text: 'Apoio nas rotinas trabalhistas, folha de pagamento, admissões, desligamentos e demais obrigações relacionadas à equipe.',
+    text: 'Apoio nas rotinas de folha de pagamento, admissões, desligamentos e demais obrigações trabalhistas.'
   },
   {
     icon: 'user',
-    title: 'Imposto de Renda',
-    text: 'Orientação e elaboração da declaração conforme o perfil do contribuinte e as informações apresentadas.',
+    title: 'Imposto de Renda Pessoa Física',
+    text: 'Orientação e elaboração da declaração conforme o perfil do contribuinte e as informações apresentadas.'
   },
   {
     icon: 'chart',
     title: 'Planejamento Tributário',
-    text: 'Análise das possibilidades tributárias aplicáveis à realidade do negócio, buscando decisões mais organizadas e seguras.',
+    text: 'Análise das possibilidades tributárias aplicáveis ao negócio, buscando maior organização e segurança nas decisões.'
   },
   {
     icon: 'store',
-    title: 'MEI e Pequenas Empresas',
-    text: 'Orientação contábil para empreendedores e pequenos negócios que precisam de acompanhamento próximo e objetivo.',
+    title: 'Assessoria ao Produtor Rural',
+    text: 'Orientação contábil e apoio nas obrigações do produtor rural, considerando as particularidades de sua atividade.'
   },
   {
     icon: 'shield',
-    title: 'Regularização Empresarial',
-    text: 'Auxílio na organização e regularização de pendências e situações contábeis que precisam ser analisadas e encaminhadas.',
-  },
+    title: 'Certificado Digital',
+    text: 'Emissão de certificado digital para pessoas físicas e empresas, facilitando assinaturas e acessos eletrônicos com segurança.'
+  }
 ];
 
 function Icon({ name }: { name: Service['icon'] }) {
