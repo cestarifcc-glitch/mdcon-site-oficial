@@ -491,3 +491,73 @@
   .services-page-cta{padding:28px}
   .services-page-cta h2{font-size:30px}
 }
+
+
+/* V11 — rodapé global atualizado */
+.footer-grid-v2{
+  grid-template-columns:1.35fr .8fr 1.25fr 1fr;
+  gap:54px;
+}
+.footer-about p{
+  margin-bottom:18px;
+}
+.footer-address{
+  color:#bdbdbd;
+  line-height:1.65;
+}
+.footer-grid-v2 h4{
+  margin-top:0;
+  margin-bottom:16px;
+}
+.footer-grid-v2 a,
+.footer-grid-v2 span{
+  line-height:1.45;
+}
+.footer-grid-v2 a{
+  transition:color .2s ease;
+}
+.footer-grid-v2 a:hover{
+  color:#FFC400;
+}
+.footer-contact-label{
+  margin-top:16px !important;
+  color:#8f8f8f !important;
+  font-size:11px !important;
+  font-weight:800;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+.footer-map-link{
+  margin-top:18px !important;
+  color:#FFC400 !important;
+  font-weight:800;
+}
+.footer-bottom-v2{
+  padding-right:90px;
+}
+.whatsapp-float{
+  right:24px;
+  bottom:24px;
+}
+@media(max-width:900px){
+  .footer-grid-v2{
+    grid-template-columns:1fr 1fr;
+  }
+  .footer-bottom-v2{
+    padding-right:90px;
+  }
+}
+@media(max-width:620px){
+  .footer-grid-v2{
+    grid-template-columns:1fr;
+    gap:34px;
+  }
+  .footer-bottom-v2{
+    padding-right:0;
+    padding-bottom:72px;
+  }
+  .whatsapp-float{
+    right:18px;
+    bottom:18px;
+  }
+}
