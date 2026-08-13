@@ -316,8 +316,8 @@ export default function Conteudos() {
             <span className="content-eyebrow">TEMAS</span>
             <h2>Assuntos que fazem parte da rotina de empresas e empreendedores.</h2>
             <p>
-              A MDCon poderá usar este espaço para publicar conteúdos educativos
-              e responder dúvidas frequentes dos clientes.
+             Conteúdos para ajudar empresas, empreendedores e produtores rurais a 
+              compreender melhor temas contábeis, fiscais e empresariais.
             </p>
           </div>
 
