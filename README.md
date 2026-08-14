@@ -10,3 +10,5 @@ Atualizações desta versão:
 - responsividade preservada.
 
 Envie o conteúdo deste ZIP para a raiz do repositório `mdcon-site-oficial`.
+
+Teste de conexão Vercel - 14/08/2026
