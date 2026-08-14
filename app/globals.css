@@ -740,3 +740,18 @@
 .header-cta:hover{
   background:#FFC400 !important;
 }
+
+
+/* Ajuste final — título principal da Home */
+.hero-v2 .hero-copy h1{
+  font-size:clamp(44px,4.15vw,58px);
+  line-height:1.05;
+  letter-spacing:-2.5px;
+}
+@media(max-width:620px){
+  .hero-v2 .hero-copy h1{
+    font-size:38px;
+    line-height:1.06;
+    letter-spacing:-1.8px;
+  }
+}
