@@ -69,7 +69,7 @@ export default function Conteudos() {
         .content-hero h1{
           max-width:860px;
           margin:0 0 22px;
-          font-size:clamp(48px,6vw,76px);
+          font-size:clamp(42px,4.7vw,60px);
           line-height:1.02;
           letter-spacing:-3px;
         }
@@ -93,7 +93,7 @@ export default function Conteudos() {
 
         .content-head h2{
           margin:0 0 12px;
-          font-size:clamp(34px,4vw,48px);
+          font-size:clamp(30px,3.2vw,42px);
           line-height:1.08;
           letter-spacing:-1.7px;
         }
@@ -222,7 +222,7 @@ export default function Conteudos() {
           }
 
           .content-hero h1{
-            font-size:44px;
+            font-size:38px;
             letter-spacing:-2px;
           }
 
