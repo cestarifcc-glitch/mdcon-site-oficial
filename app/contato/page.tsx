@@ -41,7 +41,7 @@ export default function Contato() {
         .contact-hero h1{
           margin:0 0 22px;
           max-width:850px;
-          font-size:clamp(48px,6vw,76px);
+          font-size:clamp(42px,4.7vw,60px);
           line-height:1.02;
           letter-spacing:-3px;
         }
@@ -240,7 +240,7 @@ export default function Contato() {
           }
 
           .contact-hero h1{
-            font-size:44px;
+            font-size:38px;
             letter-spacing:-2px;
           }
 
