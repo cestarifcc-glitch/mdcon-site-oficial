@@ -49,7 +49,7 @@ export default function Sobre() {
         .about-hero h1{
           margin:0 0 22px;
           max-width:620px;
-          font-size:clamp(48px,5.7vw,72px);
+          font-size:clamp(42px,4.5vw,58px);
           line-height:1.02;
           letter-spacing:-3px;
         }
@@ -89,7 +89,7 @@ export default function Sobre() {
         .about-intro h2{
           margin:0;
           max-width:460px;
-          font-size:clamp(34px,4vw,50px);
+          font-size:clamp(30px,3.2vw,42px);
           line-height:1.08;
           letter-spacing:-1.8px;
         }
@@ -116,7 +116,7 @@ export default function Sobre() {
 
         .about-values-head h2{
           margin:0 0 14px;
-          font-size:clamp(36px,4vw,50px);
+          font-size:clamp(30px,3.2vw,42px);
           line-height:1.08;
           letter-spacing:-1.8px;
         }
@@ -187,7 +187,7 @@ export default function Sobre() {
 
         .about-process h2{
           margin:0;
-          font-size:clamp(36px,4vw,50px);
+          font-size:clamp(30px,3.2vw,42px);
           line-height:1.08;
           letter-spacing:-1.8px;
         }
@@ -304,7 +304,7 @@ export default function Sobre() {
           }
 
           .about-hero h1{
-            font-size:44px;
+            font-size:38px;
             letter-spacing:-2px;
           }
 
