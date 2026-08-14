@@ -17,7 +17,7 @@ export default function Sobre() {
         .about-page{
           background:#fff;
           color:#161616;
-       }
+        }
 
         .about-wrap{
           width:min(1120px,calc(100% - 40px));
