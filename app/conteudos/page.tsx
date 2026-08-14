@@ -83,7 +83,7 @@ export default function Conteudos() {
         }
 
         .content-section{
-          padding:78px 0 88px;
+          padding:78px 0 42px;
         }
 
         .content-head{
@@ -158,7 +158,7 @@ export default function Conteudos() {
 
 
         .content-cta{
-          padding:82px 0;
+          padding:28px 0 82px;
         }
 
         .content-cta-box{
@@ -226,9 +226,12 @@ export default function Conteudos() {
             letter-spacing:-2px;
           }
 
-          .content-section,
+          .content-section{
+            padding:60px 0 30px;
+          }
+
           .content-cta{
-            padding:60px 0;
+            padding:20px 0 60px;
           }
 
           .topic-grid{
