@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const YELLOW = '#FFC400';
-const YELLOW_DARK = '#B78A00';
+const YELLOW_DARK = '#FFC400';
 
 export default function Contato() {
   return (
