@@ -1129,3 +1129,102 @@ body{
     font-size:26px !important;
   }
 }
+
+/* =========================================================
+   V16 — IDENTIDADE VISUAL MOBILE
+   Fundo branco + amarelo oficial MDCon #FFC400
+   ========================================================= */
+@media (max-width:620px){
+
+  html,
+  body,
+  main,
+  .header,
+  .hero-v2,
+  .hero-v2 .container,
+  .hero-v2 .hero-grid,
+  .hero-v2 .hero-copy{
+    background:#FFFFFF !important;
+    color:#161616 !important;
+  }
+
+  .header{
+    border-bottom-color:#E7E7E7 !important;
+  }
+
+  .menu-btn{
+    color:#161616 !important;
+  }
+
+  .hero-v2 .hero-copy .eyebrow{
+    color:#FFC400 !important;
+  }
+
+  .hero-v2 .hero-copy h1{
+    color:#161616 !important;
+  }
+
+  .hero-v2 .hero-copy h1 span{
+    color:#FFC400 !important;
+  }
+
+  .hero-v2 .hero-copy > p{
+    color:#454545 !important;
+  }
+
+  .hero-actions .btn.primary,
+  .hero-actions .btn-primary,
+  .hero-actions a:first-child,
+  .btn.primary,
+  .btn-primary{
+    background:#FFC400 !important;
+    border-color:#FFC400 !important;
+    color:#161616 !important;
+    box-shadow:0 10px 24px rgba(0,0,0,.08) !important;
+  }
+
+  .hero-actions .btn.primary:hover,
+  .hero-actions .btn-primary:hover,
+  .hero-actions a:first-child:hover,
+  .btn.primary:hover,
+  .btn-primary:hover{
+    background:#E8B200 !important;
+    border-color:#E8B200 !important;
+    color:#161616 !important;
+  }
+
+  .hero-actions .btn:not(.primary):not(.btn-primary),
+  .btn.secondary,
+  .btn-outline{
+    background:#FFFFFF !important;
+    border-color:#D8D8D8 !important;
+    color:#161616 !important;
+  }
+
+  .hero-proof{
+    background:#FFFFFF !important;
+    color:#161616 !important;
+  }
+
+  .hero-proof span{
+    color:#333333 !important;
+    border-bottom-color:#E7E7E7 !important;
+  }
+
+  .hero-photo-card{
+    background:#F5F5F3 !important;
+  }
+
+  .nav.open{
+    background:#FFFFFF !important;
+    border-color:#E5E5E5 !important;
+  }
+
+  .nav a{
+    color:#161616 !important;
+  }
+
+  .nav a:hover{
+    color:#FFC400 !important;
+  }
+}
