@@ -876,34 +876,43 @@ img{max-width:100%}
 }
 
 /* =========================================================
-   V15 — AJUSTE FINAL DE RESPONSIVIDADE MOBILE MDCon
+   V15 — MOBILE FINAL MDCon
+   Força esquema claro + amarelo oficial #FFC400
+   Mantém o desktop inalterado
    ========================================================= */
 
 :root{
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 html,
 body{
-  background:#fff !important;
-  color:#161616 !important;
+  background:#fff;
 }
 
 @media (max-width:620px){
 
+  :root,
   html,
-  body,
-  .hero-v2,
-  .header{
+  body{
+    color-scheme: only light !important;
     background:#fff !important;
   }
 
-  .container,
-  .hero-v2 .container{
-    width:calc(100% - 28px) !important;
-    max-width:100% !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
+  body,
+  main,
+  .header,
+  .hero-v2,
+  .hero-v2 .container,
+  .hero-v2 .hero-grid,
+  .hero-v2 .hero-copy,
+  .hero-proof{
+    background:#fff !important;
+    color:#161616 !important;
+  }
+
+  .header{
+    border-bottom:1px solid #e9e9e9 !important;
   }
 
   .nav-wrap{
@@ -918,16 +927,29 @@ body{
 
   .menu-btn{
     display:block !important;
+    color:#161616 !important;
     font-size:30px !important;
     line-height:1 !important;
+  }
+
+  .nav,
+  .nav.open{
+    background:#fff !important;
+    color:#161616 !important;
+    border-color:#e5e5e5 !important;
+  }
+
+  .nav a{
     color:#161616 !important;
   }
 
-  .nav{
-    left:14px !important;
-    right:14px !important;
-    top:68px !important;
-    max-height:calc(100vh - 82px) !important;
+  .nav>a:not(.btn):hover{
+    color:#FFC400 !important;
+  }
+
+  .hero-v2 .container{
+    width:calc(100% - 28px) !important;
+    max-width:100% !important;
   }
 
   .hero-v2 .hero-grid{
@@ -935,10 +957,9 @@ body{
     flex-direction:column !important;
     grid-template-columns:none !important;
     align-items:stretch !important;
-    min-height:0 !important;
     gap:22px !important;
-    padding-top:30px !important;
-    padding-bottom:38px !important;
+    min-height:0 !important;
+    padding:30px 0 38px !important;
   }
 
   .hero-v2 .hero-copy{
@@ -955,17 +976,18 @@ body{
   .hero-v2 .hero-copy .eyebrow{
     display:block !important;
     max-width:100% !important;
-    margin-bottom:14px !important;
+    margin:0 0 14px !important;
+    color:#FFC400 !important;
     font-size:11px !important;
     line-height:1.45 !important;
     letter-spacing:1.5px !important;
-    color:#8f6b00 !important;
   }
 
   .hero-v2 .hero-copy h1{
     width:100% !important;
     max-width:100% !important;
     margin:0 0 20px !important;
+    color:#161616 !important;
     font-size:clamp(33px,9.7vw,37px) !important;
     line-height:1.06 !important;
     letter-spacing:-1.5px !important;
@@ -974,13 +996,68 @@ body{
     hyphens:none !important;
   }
 
-  .hero-v2 .hero-copy > p{
+  .hero-v2 .hero-copy h1 em{
+    color:#FFC400 !important;
+  }
+
+  .hero-v2 .hero-copy>p{
     width:100% !important;
     max-width:100% !important;
     margin:0 !important;
+    color:#454545 !important;
     font-size:16px !important;
     line-height:1.58 !important;
-    color:#454545 !important;
+  }
+
+  .hero-actions{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:11px !important;
+    width:100% !important;
+    margin-top:24px !important;
+  }
+
+  .hero-actions .btn{
+    width:100% !important;
+    min-width:0 !important;
+    min-height:54px !important;
+    padding:0 18px !important;
+    border-radius:12px !important;
+    font-size:15px !important;
+  }
+
+  .hero-actions .btn-primary{
+    background:#FFC400 !important;
+    border-color:#FFC400 !important;
+    color:#111 !important;
+    box-shadow:0 6px 16px rgba(255,196,0,.22) !important;
+  }
+
+  .hero-actions .btn-outline{
+    background:#fff !important;
+    border-color:#cfcfcf !important;
+    color:#161616 !important;
+  }
+
+  .hero-proof{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:0 !important;
+    width:100% !important;
+    margin-top:22px !important;
+    padding-top:0 !important;
+    border-top:0 !important;
+  }
+
+  .hero-proof span,
+  .hero-proof span+span{
+    width:100% !important;
+    padding:10px 0 !important;
+    color:#333 !important;
+    border-left:0 !important;
+    border-bottom:1px solid #e8e8e8 !important;
+    font-size:12px !important;
+    line-height:1.4 !important;
   }
 
   .hero-photo-wrap{
@@ -1018,213 +1095,11 @@ body{
     display:none !important;
   }
 
-  .hero-actions{
-    display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:11px !important;
-    width:100% !important;
-    margin-top:24px !important;
-  }
-
-  .hero-actions .btn{
-    width:100% !important;
-    min-width:0 !important;
-    min-height:54px !important;
-    padding:0 18px !important;
-    font-size:15px !important;
-    border-radius:12px !important;
-  }
-
-  .hero-proof{
-    display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:0 !important;
-    width:100% !important;
-    margin-top:22px !important;
-    padding-top:0 !important;
-    border-top:0 !important;
-  }
-
-  .hero-proof span,
-  .hero-proof span + span{
-    width:100% !important;
-    padding:10px 0 !important;
-    border-left:0 !important;
-    border-bottom:1px solid #ececec !important;
-    font-size:12px !important;
-    line-height:1.4 !important;
-  }
-
-  .section,
-  .about-team,
-  .services-premium{
-    padding-top:44px !important;
-    padding-bottom:44px !important;
-  }
-
-  .section-head{
-    margin-bottom:28px !important;
-  }
-
-  .section-head h2,
-  .local-grid h2,
-  .split-grid h2,
-  .cta-box h2{
-    font-size:29px !important;
-    line-height:1.08 !important;
-    letter-spacing:-1.1px !important;
-  }
-
-  .featured-services,
-  .services-grid,
-  .trust-grid,
-  .benefits-grid,
-  .faq-grid,
-  .info-panels,
-  .services-list,
-  .post-grid,
-  .footer-grid,
-  .form-grid{
-    grid-template-columns:1fr !important;
-  }
-
-  .featured-card{
-    min-height:0 !important;
-    padding:24px 22px !important;
-  }
-
-  .cta-box,
-  .services-page-cta,
-  .content-cta-box{
-    width:100% !important;
-    padding:26px 22px !important;
-    border-radius:20px !important;
-  }
-
-  .btn.big,
-  .content-btn{
-    width:100% !important;
-    min-width:0 !important;
-  }
-
-  .footer{
-    padding-top:42px !important;
-  }
-
-  .footer-grid-v2{
-    grid-template-columns:1fr !important;
-    gap:28px !important;
-  }
-
-  .footer-bottom-v2{
-    padding-right:0 !important;
-    padding-bottom:72px !important;
-  }
-
   .whatsapp-float{
     right:16px !important;
     bottom:16px !important;
     width:54px !important;
     height:54px !important;
     font-size:26px !important;
-  }
-}
-
-/* =========================================================
-   V16 — IDENTIDADE VISUAL MOBILE
-   Fundo branco + amarelo oficial MDCon #FFC400
-   ========================================================= */
-@media (max-width:620px){
-
-  html,
-  body,
-  main,
-  .header,
-  .hero-v2,
-  .hero-v2 .container,
-  .hero-v2 .hero-grid,
-  .hero-v2 .hero-copy{
-    background:#FFFFFF !important;
-    color:#161616 !important;
-  }
-
-  .header{
-    border-bottom-color:#E7E7E7 !important;
-  }
-
-  .menu-btn{
-    color:#161616 !important;
-  }
-
-  .hero-v2 .hero-copy .eyebrow{
-    color:#FFC400 !important;
-  }
-
-  .hero-v2 .hero-copy h1{
-    color:#161616 !important;
-  }
-
-  .hero-v2 .hero-copy h1 span{
-    color:#FFC400 !important;
-  }
-
-  .hero-v2 .hero-copy > p{
-    color:#454545 !important;
-  }
-
-  .hero-actions .btn.primary,
-  .hero-actions .btn-primary,
-  .hero-actions a:first-child,
-  .btn.primary,
-  .btn-primary{
-    background:#FFC400 !important;
-    border-color:#FFC400 !important;
-    color:#161616 !important;
-    box-shadow:0 10px 24px rgba(0,0,0,.08) !important;
-  }
-
-  .hero-actions .btn.primary:hover,
-  .hero-actions .btn-primary:hover,
-  .hero-actions a:first-child:hover,
-  .btn.primary:hover,
-  .btn-primary:hover{
-    background:#E8B200 !important;
-    border-color:#E8B200 !important;
-    color:#161616 !important;
-  }
-
-  .hero-actions .btn:not(.primary):not(.btn-primary),
-  .btn.secondary,
-  .btn-outline{
-    background:#FFFFFF !important;
-    border-color:#D8D8D8 !important;
-    color:#161616 !important;
-  }
-
-  .hero-proof{
-    background:#FFFFFF !important;
-    color:#161616 !important;
-  }
-
-  .hero-proof span{
-    color:#333333 !important;
-    border-bottom-color:#E7E7E7 !important;
-  }
-
-  .hero-photo-card{
-    background:#F5F5F3 !important;
-  }
-
-  .nav.open{
-    background:#FFFFFF !important;
-    border-color:#E5E5E5 !important;
-  }
-
-  .nav a{
-    color:#161616 !important;
-  }
-
-  .nav a:hover{
-    color:#FFC400 !important;
   }
 }
