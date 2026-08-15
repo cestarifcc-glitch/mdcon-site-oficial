@@ -36,7 +36,6 @@ const topics = [
   },
 ];
 
-
 export default function Conteudos() {
   return (
     <main className="content-page">
@@ -52,7 +51,7 @@ export default function Conteudos() {
         }
 
         .content-hero{
-          padding:86px 0 68px;
+          padding:68px 0 58px;
           background:linear-gradient(180deg,#fff 0%,#fbfbf8 100%);
           border-bottom:1px solid #efefec;
         }
@@ -67,70 +66,71 @@ export default function Conteudos() {
         }
 
         .content-hero h1{
-          max-width:860px;
-          margin:0 0 22px;
-          font-size:clamp(42px,4.7vw,60px);
-          line-height:1.02;
-          letter-spacing:-3px;
+          max-width:780px;
+          margin:0 0 20px;
+          font-size:clamp(40px,4.2vw,54px);
+          line-height:1.04;
+          letter-spacing:-2.4px;
         }
 
         .content-hero p{
-          max-width:770px;
+          max-width:740px;
           margin:0;
           color:#606060;
-          font-size:18px;
-          line-height:1.7;
+          font-size:17px;
+          line-height:1.68;
         }
 
         .content-section{
-          padding:78px 0 42px;
+          padding:64px 0 36px;
         }
 
         .content-head{
-          max-width:720px;
-          margin-bottom:40px;
+          max-width:700px;
+          margin-bottom:34px;
         }
 
         .content-head h2{
           margin:0 0 12px;
-          font-size:clamp(30px,3.2vw,42px);
+          font-size:clamp(30px,3.1vw,40px);
           line-height:1.08;
-          letter-spacing:-1.7px;
+          letter-spacing:-1.6px;
         }
 
         .content-head p{
           margin:0;
           color:#666;
-          line-height:1.7;
+          line-height:1.68;
         }
 
         .topic-grid{
           display:grid;
           grid-template-columns:repeat(3,minmax(0,1fr));
-          gap:20px;
+          gap:18px;
         }
 
         .topic-card{
-          min-height:220px;
-          padding:26px 24px;
+          min-height:205px;
+          padding:24px 22px;
           border:1px solid #e5e5e1;
-          border-radius:20px;
+          border-radius:18px;
           background:#fff;
-          transition:.2s ease;
+          transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
         }
 
         .topic-card:hover{
-          transform:translateY(-5px);
-          box-shadow:0 18px 42px rgba(0,0,0,.07);
+          transform:translateY(-4px);
+          border-color:#dcdcd6;
+          box-shadow:0 16px 36px rgba(0,0,0,.06);
         }
 
         .topic-number{
-          width:46px;
-          height:46px;
+          width:44px;
+          height:44px;
           display:grid;
           place-items:center;
-          margin-bottom:22px;
-          border-radius:14px;
+          margin-bottom:18px;
+          border-radius:13px;
           background:#fff3bd;
           color:${YELLOW_DARK};
           font-size:13px;
@@ -138,50 +138,44 @@ export default function Conteudos() {
         }
 
         .topic-card h3{
-          margin:0 0 10px;
-          font-size:21px;
+          margin:0 0 9px;
+          font-size:20px;
           line-height:1.25;
-          letter-spacing:-.4px;
+          letter-spacing:-.35px;
         }
 
         .topic-card p{
           margin:0;
           color:#666;
           font-size:14px;
-          line-height:1.65;
+          line-height:1.62;
         }
 
-
-
-
-
-
-
         .content-cta{
-          padding:28px 0 82px;
+          padding:24px 0 72px;
         }
 
         .content-cta-box{
           display:flex;
           align-items:center;
           justify-content:space-between;
-          gap:34px;
-          padding:40px 44px;
-          border-radius:26px;
+          gap:32px;
+          padding:34px 38px;
+          border-radius:24px;
           background:#181818;
           color:#fff;
         }
 
         .content-cta-box h2{
           margin:0 0 10px;
-          font-size:34px;
+          font-size:32px;
           line-height:1.1;
-          letter-spacing:-1.2px;
+          letter-spacing:-1.1px;
         }
 
         .content-cta-box p{
           margin:0;
-          max-width:680px;
+          max-width:660px;
           color:#cfcfcf;
           line-height:1.65;
         }
@@ -209,41 +203,64 @@ export default function Conteudos() {
           .content-cta-box{
             flex-direction:column;
             align-items:flex-start;
+            gap:24px;
           }
         }
 
         @media(max-width:620px){
           .content-wrap{
-            width:min(100% - 28px,1120px);
+            width:min(100% - 24px,1120px);
           }
 
           .content-hero{
-            padding:58px 0 46px;
+            padding:44px 0 40px;
           }
 
           .content-hero h1{
-            font-size:38px;
-            letter-spacing:-2px;
+            font-size:36px;
+            line-height:1.05;
+            letter-spacing:-1.5px;
+          }
+
+          .content-hero p{
+            font-size:16px;
+            line-height:1.65;
           }
 
           .content-section{
-            padding:60px 0 30px;
+            padding:46px 0 28px;
           }
 
-          .content-cta{
-            padding:20px 0 60px;
+          .content-head{
+            margin-bottom:28px;
           }
 
           .topic-grid{
             grid-template-columns:1fr;
+            gap:14px;
+          }
+
+          .topic-card{
+            min-height:auto;
+            padding:22px 20px;
+          }
+
+          .content-cta{
+            padding:18px 0 56px;
           }
 
           .content-cta-box{
-            padding:28px;
+            padding:26px 22px;
           }
 
           .content-cta-box h2{
-            font-size:30px;
+            font-size:28px;
+          }
+
+          .content-btn{
+            width:100%;
+            box-sizing:border-box;
+            text-align:center;
           }
         }
       `}</style>
@@ -281,7 +298,6 @@ export default function Conteudos() {
           </div>
         </div>
       </section>
-
 
       <section className="content-cta">
         <div className="content-wrap">
