@@ -25,7 +25,7 @@ export default function Sobre() {
         }
 
         .about-hero{
-          padding:86px 0 70px;
+          padding:72px 0 62px;
           background:linear-gradient(180deg,#fff 0%,#fbfbf8 100%);
           border-bottom:1px solid #efefec;
         }
@@ -41,32 +41,32 @@ export default function Sobre() {
 
         .about-hero-grid{
           display:grid;
-          grid-template-columns:.9fr 1.1fr;
-          gap:56px;
+          grid-template-columns:.95fr 1.05fr;
+          gap:48px;
           align-items:center;
         }
 
         .about-hero h1{
           margin:0 0 22px;
-          max-width:620px;
-          font-size:clamp(42px,4.5vw,58px);
-          line-height:1.02;
-          letter-spacing:-3px;
+          max-width:560px;
+          font-size:clamp(40px,4.1vw,54px);
+          line-height:1.03;
+          letter-spacing:-2.4px;
         }
 
         .about-hero p{
           margin:0;
           max-width:610px;
           color:#5f5f5f;
-          font-size:18px;
+          font-size:17px;
           line-height:1.75;
         }
 
         .about-photo{
           position:relative;
-          min-height:470px;
+          min-height:430px;
           overflow:hidden;
-          border-radius:24px;
+          border-radius:22px;
           background:#f4f4f1;
           box-shadow:0 20px 50px rgba(0,0,0,.08);
         }
@@ -76,13 +76,13 @@ export default function Sobre() {
         }
 
         .about-section{
-          padding:82px 0;
+          padding:72px 0;
         }
 
         .about-intro{
           display:grid;
-          grid-template-columns:.9fr 1.1fr;
-          gap:70px;
+          grid-template-columns:.95fr 1.05fr;
+          gap:60px;
           align-items:start;
         }
 
@@ -102,7 +102,7 @@ export default function Sobre() {
         }
 
         .about-values{
-          padding:82px 0;
+          padding:72px 0;
           background:#fafaf8;
           border-top:1px solid #efefec;
           border-bottom:1px solid #efefec;
@@ -110,7 +110,7 @@ export default function Sobre() {
 
         .about-values-head{
           max-width:720px;
-          margin:0 auto 42px;
+          margin:0 auto 36px;
           text-align:center;
         }
 
@@ -175,13 +175,13 @@ export default function Sobre() {
         }
 
         .about-process{
-          padding:82px 0;
+          padding:72px 0;
         }
 
         .about-process-grid{
           display:grid;
           grid-template-columns:.85fr 1.15fr;
-          gap:70px;
+          gap:60px;
           align-items:start;
         }
 
@@ -229,7 +229,7 @@ export default function Sobre() {
         }
 
         .about-cta{
-          padding:24px 0 86px;
+          padding:20px 0 72px;
         }
 
         .about-cta-box{
@@ -237,7 +237,7 @@ export default function Sobre() {
           align-items:center;
           justify-content:space-between;
           gap:34px;
-          padding:40px 44px;
+          padding:36px 40px;
           border-radius:26px;
           background:#181818;
           color:#fff;
@@ -246,7 +246,7 @@ export default function Sobre() {
         .about-cta-box h2{
           margin:0 0 10px;
           max-width:690px;
-          font-size:34px;
+          font-size:32px;
           line-height:1.1;
           letter-spacing:-1.2px;
         }
@@ -280,12 +280,21 @@ export default function Sobre() {
             grid-template-columns:1fr;
           }
 
+          .about-hero-grid{
+            gap:36px;
+          }
+
+          .about-intro,
+          .about-process-grid{
+            gap:38px;
+          }
+
           .about-grid{
             grid-template-columns:1fr 1fr;
           }
 
           .about-photo{
-            min-height:420px;
+            min-height:380px;
           }
 
           .about-cta-box{
@@ -296,38 +305,62 @@ export default function Sobre() {
 
         @media(max-width:620px){
           .about-wrap{
-            width:min(100% - 28px,1120px);
+            width:min(100% - 24px,1120px);
           }
 
           .about-hero{
-            padding:58px 0 50px;
+            padding:44px 0 46px;
           }
 
           .about-hero h1{
-            font-size:38px;
-            letter-spacing:-2px;
+            font-size:36px;
+            line-height:1.05;
+            letter-spacing:-1.5px;
+          }
+
+          .about-hero p{
+            font-size:16px;
+            line-height:1.65;
           }
 
           .about-photo{
-            min-height:300px;
+            min-height:280px;
+            border-radius:18px;
           }
 
           .about-section,
           .about-values,
           .about-process{
-            padding:62px 0;
+            padding:52px 0;
           }
 
           .about-grid{
             grid-template-columns:1fr;
+            gap:14px;
+          }
+
+          .about-values-head{
+            margin-bottom:30px;
+          }
+
+          .about-card{
+            min-height:auto;
+            padding:22px 20px;
           }
 
           .about-cta-box{
-            padding:28px;
+            padding:26px 22px;
+            gap:24px;
           }
 
           .about-cta-box h2{
-            font-size:30px;
+            font-size:28px;
+          }
+
+          .about-btn{
+            width:100%;
+            text-align:center;
+            box-sizing:border-box;
           }
         }
       `}</style>
