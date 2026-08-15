@@ -1103,3 +1103,108 @@ body{
     font-size:26px !important;
   }
 }
+
+/* =========================================================
+   V16 — CORREÇÃO DEFINITIVA DE CORES MDCon NO MOBILE
+   Mantém o amarelo oficial #FFC400 mesmo com modo escuro
+   do aparelho/navegador.
+   ========================================================= */
+
+:root{
+  --yellow:#FFC400 !important;
+  --yellow2:#FFC400 !important;
+  --yellow-dark:#FFC400 !important;
+  color-scheme: light !important;
+}
+
+@media (max-width:620px){
+
+  :root,
+  html,
+  body{
+    color-scheme: light !important;
+  }
+
+  /* Amarelo institucional */
+  .eyebrow,
+  .hero-v2 .hero-copy .eyebrow,
+  .hero h1 em,
+  .hero-v2 .hero-copy h1 em,
+  .text-link,
+  .service-more,
+  .services-page-link,
+  .footer-map-link,
+  .nav>a:not(.btn):hover{
+    color:#FFC400 !important;
+    -webkit-text-fill-color:#FFC400 !important;
+  }
+
+  /* Botões principais */
+  .btn-primary,
+  .hero-actions .btn-primary,
+  .header-cta{
+    background:#FFC400 !important;
+    background-color:#FFC400 !important;
+    border-color:#FFC400 !important;
+    color:#111111 !important;
+    -webkit-text-fill-color:#111111 !important;
+    forced-color-adjust:none;
+  }
+
+  .btn-primary:hover,
+  .hero-actions .btn-primary:hover,
+  .header-cta:hover{
+    background:#FFC400 !important;
+    background-color:#FFC400 !important;
+    border-color:#FFC400 !important;
+  }
+
+  /* Elementos gráficos amarelos */
+  .step b,
+  .hero-proof span:before,
+  .featured-card:before,
+  .services-page-card:before{
+    background:#FFC400 !important;
+    background-color:#FFC400 !important;
+  }
+
+  .trust-card i,
+  .service-card i,
+  .benefits-grid i,
+  .featured-card i,
+  .services-page-icon{
+    color:#FFC400 !important;
+    -webkit-text-fill-color:#FFC400 !important;
+  }
+}
+
+/* Evita recoloração automática do amarelo pelo dark mode */
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme: light !important;
+    --yellow:#FFC400 !important;
+    --yellow2:#FFC400 !important;
+    --yellow-dark:#FFC400 !important;
+  }
+
+  @media (max-width:620px){
+    .eyebrow,
+    .hero-v2 .hero-copy .eyebrow,
+    .hero h1 em,
+    .hero-v2 .hero-copy h1 em{
+      color:#FFC400 !important;
+      -webkit-text-fill-color:#FFC400 !important;
+    }
+
+    .btn-primary,
+    .hero-actions .btn-primary,
+    .header-cta{
+      background:#FFC400 !important;
+      background-color:#FFC400 !important;
+      border-color:#FFC400 !important;
+      color:#111111 !important;
+      -webkit-text-fill-color:#111111 !important;
+    }
+  }
+}
+
