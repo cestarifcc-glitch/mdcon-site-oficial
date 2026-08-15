@@ -24,7 +24,7 @@ export default function Contato() {
         }
 
         .contact-hero{
-          padding:86px 0 66px;
+          padding:68px 0 58px;
           background:linear-gradient(180deg,#fff 0%,#fbfbf8 100%);
           border-bottom:1px solid #efefec;
         }
@@ -40,46 +40,46 @@ export default function Contato() {
 
         .contact-hero h1{
           margin:0 0 22px;
-          max-width:850px;
-          font-size:clamp(42px,4.7vw,60px);
-          line-height:1.02;
-          letter-spacing:-3px;
+          max-width:760px;
+          font-size:clamp(40px,4.2vw,54px);
+          line-height:1.04;
+          letter-spacing:-2.4px;
         }
 
         .contact-hero p{
           margin:0;
           max-width:760px;
           color:#606060;
-          font-size:18px;
+          font-size:17px;
           line-height:1.7;
         }
 
         .contact-section{
-          padding:74px 0 94px;
+          padding:64px 0 76px;
         }
 
         .contact-grid{
           display:grid;
           grid-template-columns:.9fr 1.1fr;
-          gap:34px;
+          gap:28px;
           align-items:stretch;
         }
 
         .contact-info{
           display:grid;
-          gap:18px;
+          gap:16px;
         }
 
         .contact-card{
-          padding:26px 28px;
+          padding:24px 26px;
           border:1px solid #e5e5e1;
-          border-radius:20px;
+          border-radius:18px;
           background:#fff;
         }
 
         .contact-card h2{
           margin:0 0 12px;
-          font-size:22px;
+          font-size:21px;
           letter-spacing:-.4px;
         }
 
@@ -148,7 +148,7 @@ export default function Contato() {
         .hours-row{
           display:flex;
           justify-content:space-between;
-          gap:18px;
+          gap:16px;
           padding:8px 0;
           border-bottom:1px solid #efefec;
         }
@@ -177,20 +177,20 @@ export default function Contato() {
         .map-card iframe{
           display:block;
           width:100%;
-          min-height:620px;
+          min-height:560px;
           border:0;
         }
 
         .contact-cta{
-          padding:0 0 86px;
+          padding:20px 0 72px;
         }
 
         .contact-cta-box{
           display:flex;
           align-items:center;
           justify-content:space-between;
-          gap:34px;
-          padding:40px 44px;
+          gap:28px;
+          padding:34px 38px;
           border-radius:26px;
           background:#181818;
           color:#fff;
@@ -199,7 +199,7 @@ export default function Contato() {
         .contact-cta-box h2{
           margin:0 0 10px;
           max-width:680px;
-          font-size:34px;
+          font-size:32px;
           line-height:1.1;
           letter-spacing:-1.2px;
         }
@@ -227,29 +227,30 @@ export default function Contato() {
           .contact-cta-box{
             flex-direction:column;
             align-items:flex-start;
+            gap:24px;
           }
         }
 
         @media(max-width:620px){
           .contact-wrap{
-            width:min(100% - 28px,1120px);
+            width:min(100% - 24px,1120px);
           }
 
           .contact-hero{
-            padding:58px 0 46px;
+            padding:44px 0 40px;
           }
 
           .contact-hero h1{
-            font-size:38px;
-            letter-spacing:-2px;
+            font-size:36px;
+            letter-spacing:-1.5px;
           }
 
           .contact-section{
-            padding:52px 0 68px;
+            padding:46px 0 58px;
           }
 
           .contact-card{
-            padding:22px;
+            padding:22px 20px;
           }
 
           .hours-row{
@@ -262,15 +263,34 @@ export default function Contato() {
           }
 
           .map-card iframe{
-            min-height:320px;
+            min-height:300px;
           }
 
           .contact-cta-box{
-            padding:28px;
+            padding:26px 22px;
           }
 
           .contact-cta-box h2{
-            font-size:30px;
+            font-size:28px;
+          }
+
+          .contact-hero p{
+            font-size:16px;
+            line-height:1.65;
+          }
+
+          .contact-actions{
+            gap:10px;
+          }
+
+          .contact-btn{
+            width:100%;
+            box-sizing:border-box;
+            text-align:center;
+          }
+
+          .map-card{
+            border-radius:18px;
           }
         }
       `}</style>
