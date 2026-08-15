@@ -755,3 +755,122 @@
     letter-spacing:-1.8px;
   }
 }
+
+/* V14 — revisão final de responsividade e consistência */
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%}
+
+/* Evita que o menu mobile ultrapasse a tela */
+@media(max-width:900px){
+  .nav{
+    max-height:calc(100vh - 92px);
+    overflow-y:auto;
+  }
+
+  .hero-v2 .hero-grid{
+    padding-top:36px !important;
+    padding-bottom:42px !important;
+  }
+
+  .about-team-grid,
+  .local-grid,
+  .split-grid,
+  .contact-grid{
+    gap:38px;
+  }
+
+  .services-page-cta,
+  .content-cta-box,
+  .cta-box{
+    width:100%;
+  }
+}
+
+@media(max-width:620px){
+  .container{
+    width:calc(100% - 28px);
+  }
+
+  .hero-v2 .hero-grid{
+    padding-top:28px !important;
+    padding-bottom:34px !important;
+  }
+
+  .hero-v2 .hero-copy{
+    padding-top:18px;
+    padding-bottom:24px;
+  }
+
+  .hero-v2 .hero-copy h1{
+    font-size:clamp(34px,10.5vw,38px);
+    line-height:1.07;
+    letter-spacing:-1.7px;
+  }
+
+  .hero-v2 .hero-copy>p{
+    font-size:16px;
+    line-height:1.6;
+  }
+
+  .hero-photo-card{
+    width:100%;
+    max-width:100%;
+    aspect-ratio:680/383;
+    height:auto;
+    min-height:0;
+  }
+
+  .hero-proof{
+    margin-top:22px;
+  }
+
+  .section-head h2,
+  .local-grid h2,
+  .split-grid h2,
+  .cta-box h2{
+    font-size:30px;
+    letter-spacing:-1.2px;
+  }
+
+  .services-page-cta,
+  .content-cta-box,
+  .cta-box{
+    padding:26px 22px;
+    border-radius:20px;
+  }
+
+  .services-page-cta h2,
+  .content-cta-box h2{
+    font-size:28px;
+  }
+
+  .btn.big,
+  .content-btn{
+    width:100%;
+    min-width:0;
+  }
+
+  .about-team-photo{
+    min-height:0;
+    aspect-ratio:4/3;
+  }
+
+  .local-photo{
+    height:auto;
+    min-height:0;
+    aspect-ratio:4/3;
+  }
+
+  .footer{
+    padding-top:46px;
+  }
+
+  .footer-grid-v2{
+    gap:28px;
+  }
+
+  .whatsapp-float{
+    width:54px;
+    height:54px;
+  }
+}
