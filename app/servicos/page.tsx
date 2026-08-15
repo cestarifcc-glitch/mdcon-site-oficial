@@ -144,7 +144,7 @@ export default function Servicos() {
         }
 
         .svc-hero {
-          padding: 86px 0 66px;
+          padding: 68px 0 58px;
           background: linear-gradient(180deg, #fff 0%, #fbfbf8 100%);
           border-bottom: 1px solid #efefec;
         }
@@ -159,35 +159,35 @@ export default function Servicos() {
         }
 
         .svc-hero h1 {
-          max-width: 930px;
+          max-width: 820px;
           margin: 0 0 24px;
-          font-size: clamp(42px, 4.7vw, 60px);
-          line-height: 1.02;
-          letter-spacing: -3px;
+          font-size: clamp(40px, 4.2vw, 54px);
+          line-height: 1.04;
+          letter-spacing: -2.4px;
         }
 
         .svc-hero p {
           max-width: 820px;
           margin: 0;
           color: #606060;
-          font-size: 18px;
+          font-size: 17px;
           line-height: 1.7;
         }
 
         .svc-section {
-          padding: 72px 0 96px;
+          padding: 62px 0 78px;
         }
 
         .svc-grid {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 22px;
+          gap: 18px;
         }
 
         .svc-card {
           position: relative;
-          min-height: 285px;
-          padding: 28px 30px 26px;
+          min-height: 260px;
+          padding: 26px 28px 24px;
           display: flex;
           flex-direction: column;
           border: 1px solid #e5e5e1;
@@ -223,7 +223,7 @@ export default function Servicos() {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-bottom: 32px;
+          margin-bottom: 26px;
         }
 
         .svc-number {
@@ -234,8 +234,8 @@ export default function Servicos() {
         }
 
         .svc-icon {
-          width: 54px;
-          height: 54px;
+          width: 50px;
+          height: 50px;
           display: grid;
           place-items: center;
           border-radius: 16px;
@@ -245,7 +245,7 @@ export default function Servicos() {
 
         .svc-card h2 {
           margin: 0 0 12px;
-          font-size: 24px;
+          font-size: 23px;
           line-height: 1.2;
           letter-spacing: -.5px;
         }
@@ -271,8 +271,8 @@ export default function Servicos() {
         }
 
         .svc-cta {
-          margin-top: 58px;
-          padding: 38px 42px;
+          margin-top: 46px;
+          padding: 34px 38px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -284,7 +284,7 @@ export default function Servicos() {
 
         .svc-cta h2 {
           margin: 4px 0 10px;
-          font-size: 34px;
+          font-size: 32px;
           line-height: 1.1;
           letter-spacing: -1.2px;
         }
@@ -319,38 +319,50 @@ export default function Servicos() {
           .svc-cta {
             flex-direction: column;
             align-items: flex-start;
+            gap: 24px;
           }
         }
 
         @media (max-width: 620px) {
           .svc-wrap {
-            width: min(100% - 28px, 1120px);
+            width: min(100% - 24px, 1120px);
           }
 
           .svc-hero {
-            padding: 58px 0 44px;
+            padding: 44px 0 40px;
           }
 
           .svc-hero h1 {
-            font-size: 38px;
-            letter-spacing: -2px;
+            font-size: 36px;
+            letter-spacing: -1.5px;
           }
 
           .svc-section {
-            padding: 50px 0 68px;
+            padding: 44px 0 58px;
           }
 
           .svc-card {
             min-height: auto;
-            padding: 24px;
+            padding: 22px 20px;
           }
 
           .svc-cta {
-            padding: 28px;
+            padding: 26px 22px;
           }
 
           .svc-cta h2 {
-            font-size: 30px;
+            font-size: 28px;
+          }
+
+          .svc-hero p {
+            font-size: 16px;
+            line-height: 1.65;
+          }
+
+          .svc-btn {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
           }
         }
       `}</style>
