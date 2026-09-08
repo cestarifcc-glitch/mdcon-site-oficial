@@ -1,10 +1,9 @@
-import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Sobre a MDCon | Assessoria Contábil',
   description:
-    'Conheça a MDCon Assessoria Contábil, sua equipe e a forma de atendimento em Palmeira das Missões.',
+    'Conheça a MDCon Assessoria Contábil, sua forma de trabalho e o atendimento a empresas em Palmeira das Missões e em todo o Brasil.',
 };
 
 const YELLOW = '#FFC400';
@@ -22,6 +21,10 @@ export default function Sobre() {
         .about-wrap{
           width:min(1120px,calc(100% - 40px));
           margin:0 auto;
+        }
+
+        .about-hero-no-photo{
+          grid-template-columns:minmax(0,760px);
         }
 
         .about-hero{
@@ -366,26 +369,17 @@ export default function Sobre() {
       `}</style>
 
       <section className="about-hero">
-        <div className="about-wrap about-hero-grid">
+        <div className="about-wrap about-hero-grid about-hero-no-photo">
           <div>
             <span className="about-eyebrow">SOBRE A MDCON</span>
             <h1>Contabilidade próxima para acompanhar a realidade da sua empresa.</h1>
             <p>
               A MDCon Assessoria Contábil, liderada pelo contador Diego Mafalda,
-              atua em Palmeira das Missões oferecendo soluções contábeis para empresas,
-              empreendedores, produtores rurais e pessoas físicas.
+              está em Palmeira das Missões e oferece soluções contábeis para empresas,
+              empreendedores, produtores rurais e pessoas físicas, com atendimento em todo o Brasil.
             </p>
           </div>
 
-          <div className="about-photo">
-            <Image
-              src="/equipe-mdcon.png"
-              alt="Equipe da MDCon Assessoria Contábil"
-              fill
-              priority
-              sizes="(max-width: 900px) 100vw, 52vw"
-            />
-          </div>
         </div>
       </section>
 

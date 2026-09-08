@@ -44,7 +44,7 @@ const faqs=[
   ['A MDCon atende MEI?','A MDCon pode orientar empreendedores conforme os serviços contratados e a necessidade de cada negócio.'],
   ['Como trocar de contador?','A troca pode ser organizada de forma segura, com levantamento das informações necessárias e transição dos documentos contábeis.'],
   ['Quanto custa contratar uma contabilidade?','O valor depende do perfil da empresa, regime tributário, movimentação e serviços necessários. A MDCon avalia cada caso antes da proposta.'],
-  ['A MDCon atende empresas de Palmeira das Missões?','Sim. A MDCon atua em Palmeira das Missões — RS.'],
+  ['A MDCon atende empresas de Palmeira das Missões?','Sim. A MDCon está em Palmeira das Missões — RS e atende empresas de todo o Brasil.'],
   ['Posso falar com a MDCon pelo WhatsApp?','Sim. O atendimento pelo WhatsApp está disponível no número (55) 98452-2204.'],
   ['A MDCon pode ajudar na abertura de uma empresa?','Entre em contato para que a equipe entenda o seu caso e confirme a solução adequada.']
 ];

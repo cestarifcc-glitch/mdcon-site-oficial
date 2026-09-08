@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Serviços Contábeis | MDCon',
@@ -13,46 +14,55 @@ type Service = {
   title: string;
   text: string;
   icon: 'building' | 'briefcase' | 'calculator' | 'users' | 'user' | 'chart' | 'store' | 'shield';
+  slug: string;
 };
 
 const services: Service[] = [
   {
     icon: 'building',
+    slug: 'contabilidade-empresarial',
     title: 'Contabilidade Empresarial',
     text: 'Escrituração e acompanhamento contábil para manter a empresa organizada e com informações adequadas à sua rotina.'
   },
   {
     icon: 'briefcase',
+    slug: 'abertura-de-empresas',
     title: 'Constituição e Abertura de Empresas',
     text: 'Orientação para estruturar a abertura do negócio, organizar documentos e conduzir os primeiros passos da empresa.'
   },
   {
     icon: 'calculator',
+    slug: 'escrituracao-fiscal',
     title: 'Escrituração Fiscal',
     text: 'Acompanhamento das obrigações fiscais, apuração de tributos e organização das informações tributárias da empresa.'
   },
   {
     icon: 'users',
+    slug: 'departamento-pessoal',
     title: 'Departamento Pessoal',
     text: 'Apoio nas rotinas de folha de pagamento, admissões, desligamentos e demais obrigações trabalhistas.'
   },
   {
     icon: 'user',
+    slug: 'imposto-de-renda-pessoa-fisica',
     title: 'Imposto de Renda Pessoa Física',
     text: 'Orientação e elaboração da declaração conforme o perfil do contribuinte e as informações apresentadas.'
   },
   {
     icon: 'chart',
+    slug: 'planejamento-tributario',
     title: 'Planejamento Tributário',
     text: 'Análise das possibilidades tributárias aplicáveis ao negócio, buscando maior organização e segurança nas decisões.'
   },
   {
     icon: 'store',
+    slug: 'assessoria-ao-produtor-rural',
     title: 'Assessoria ao Produtor Rural',
     text: 'Orientação contábil e apoio nas obrigações do produtor rural, considerando as particularidades de sua atividade.'
   },
   {
     icon: 'shield',
+    slug: 'certificado-digital',
     title: 'Certificado Digital',
     text: 'Emissão de certificado digital para pessoas físicas e empresas, facilitando assinaturas e acessos eletrônicos com segurança.'
   }
@@ -393,16 +403,9 @@ export default function Servicos() {
                 <h2>{service.title}</h2>
                 <p>{service.text}</p>
 
-                <a
-                  className="svc-link"
-                  href={`https://wa.me/5555984522204?text=${encodeURIComponent(
-                    'Olá MDCon, gostaria de informações sobre ' + service.title + '.'
-                  )}`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Quero saber mais →
-                </a>
+                <Link className="svc-link" href={`/servicos/${service.slug}`}>
+                  Saiba mais →
+                </Link>
               </article>
             ))}
           </div>

@@ -37,14 +37,14 @@ export default function Footer() {
 
         <div>
           <h4>Serviços</h4>
-          <Link href="/servicos">Contabilidade empresarial</Link>
-          <Link href="/servicos">Abertura de empresas</Link>
-          <Link href="/servicos">Escrituração fiscal</Link>
-          <Link href="/servicos">Departamento pessoal</Link>
-          <Link href="/servicos">Imposto de Renda Pessoa Física</Link>
-          <Link href="/servicos">Planejamento tributário</Link>
-          <Link href="/servicos">Assessoria ao produtor rural</Link>
-          <Link href="/servicos">Certificado digital</Link>
+          <Link href="/servicos/contabilidade-empresarial">Contabilidade empresarial</Link>
+          <Link href="/servicos/abertura-de-empresas">Abertura de empresas</Link>
+          <Link href="/servicos/escrituracao-fiscal">Escrituração fiscal</Link>
+          <Link href="/servicos/departamento-pessoal">Departamento pessoal</Link>
+          <Link href="/servicos/imposto-de-renda-pessoa-fisica">Imposto de Renda Pessoa Física</Link>
+          <Link href="/servicos/planejamento-tributario">Planejamento tributário</Link>
+          <Link href="/servicos/assessoria-ao-produtor-rural">Assessoria ao produtor rural</Link>
+          <Link href="/servicos/certificado-digital">Certificado digital</Link>
         </div>
 
         <div>
