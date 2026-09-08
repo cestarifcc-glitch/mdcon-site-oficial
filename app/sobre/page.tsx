@@ -24,8 +24,17 @@ export default function Sobre() {
         }
 
         .about-hero-no-photo{
-          grid-template-columns:minmax(0,760px);
-          justify-content:end;
+          grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+          gap:72px;
+          align-items:start;
+        }
+
+        .about-hero-title h1{
+          margin-bottom:0;
+        }
+
+        .about-hero-copy{
+          padding-top:43px;
         }
 
         .about-hero{
@@ -288,6 +297,15 @@ export default function Sobre() {
             gap:36px;
           }
 
+          .about-hero-no-photo{
+            grid-template-columns:1fr 1fr;
+            gap:44px;
+          }
+
+          .about-hero-copy{
+            padding-top:39px;
+          }
+
           .about-intro,
           .about-process-grid{
             gap:38px;
@@ -325,6 +343,15 @@ export default function Sobre() {
           .about-hero p{
             font-size:16px;
             line-height:1.65;
+          }
+
+          .about-hero-no-photo{
+            grid-template-columns:1fr;
+            gap:22px;
+          }
+
+          .about-hero-copy{
+            padding-top:0;
           }
 
           .about-photo{
@@ -371,9 +398,12 @@ export default function Sobre() {
 
       <section className="about-hero">
         <div className="about-wrap about-hero-grid about-hero-no-photo">
-          <div>
+          <div className="about-hero-title">
             <span className="about-eyebrow">SOBRE A MDCON</span>
             <h1>Contabilidade próxima para acompanhar a realidade da sua empresa.</h1>
+          </div>
+
+          <div className="about-hero-copy">
             <p>
               A MDCon Assessoria Contábil, liderada pelo contador Diego Mafalda,
               está em Palmeira das Missões e oferece soluções contábeis para empresas,
