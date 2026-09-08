@@ -25,6 +25,7 @@ export default function Sobre() {
 
         .about-hero-no-photo{
           grid-template-columns:minmax(0,760px);
+          justify-content:end;
         }
 
         .about-hero{

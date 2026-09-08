@@ -1208,3 +1208,8 @@ body{
   }
 }
 
+
+/* Temporariamente sem foto da equipe */
+.about-team-grid.about-team-no-photo{grid-template-columns:minmax(0,620px);justify-content:end}
+.about-team-no-photo .about-team-copy{width:100%}
+@media(max-width:900px){.about-team-grid.about-team-no-photo{grid-template-columns:1fr;justify-content:stretch}}

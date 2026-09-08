@@ -33,11 +33,11 @@ const services:[IconName,string,string][] = [
   ['shield','Regularização Empresarial','Auxílio na organização e regularização de situações empresariais.']
 ];
 
-const featuredServices:[IconName,string,string][] = [
-  ['briefcase','Contabilidade Completa','Gestão contábil com organização, acompanhamento e clareza para a empresa.'],
-  ['users','Departamento Pessoal','Apoio nas rotinas de folha, encargos e obrigações trabalhistas.'],
-  ['calculator','Fiscal e Tributário','Acompanhamento fiscal e análise tributária com foco em organização e segurança.'],
-  ['chart','Consultoria Empresarial','Informações e análises contábeis para apoiar decisões do negócio.']
+const featuredServices:[IconName,string,string,string][] = [
+  ['briefcase','Contabilidade Completa','Gestão contábil com organização, acompanhamento e clareza para a empresa.','/servicos/contabilidade-empresarial'],
+  ['users','Departamento Pessoal','Apoio nas rotinas de folha, encargos e obrigações trabalhistas.','/servicos/departamento-pessoal'],
+  ['calculator','Fiscal e Tributário','Acompanhamento fiscal e análise tributária com foco em organização e segurança.','/servicos/escrituracao-fiscal'],
+  ['chart','Consultoria Empresarial','Informações e análises contábeis para apoiar decisões do negócio.','/servicos/planejamento-tributario']
 ];
 
 const faqs=[
@@ -75,7 +75,7 @@ export default function Home(){return <>
     ([['briefcase','Assessoria contábil','Acompanhamento das principais necessidades contábeis da empresa.'],['target','Orientação empresarial','Informações para ajudar o empresário a tomar decisões com mais segurança.'],['handshake','Atendimento próximo','Uma relação profissional baseada em comunicação e acompanhamento.']] as [IconName,string,string][]).map(x=><article className="trust-card" key={x[1]}><i><Icon name={x[0]}/></i><div><h3>{x[1]}</h3><p>{x[2]}</p></div></article>)}
   </div></div></section>
 
-  <section className="section about-team"><div className="container about-team-grid"><div className="about-team-photo"><Image src="/equipe-mdcon.png" alt="Equipe da MDCon Assessoria Contábil" fill sizes="(max-width: 900px) 100vw, 52vw" /></div><div className="about-team-copy"><span className="eyebrow">SOBRE A MDCON</span><h2>Contabilidade feita por pessoas que acompanham o seu negócio.</h2><p>A MDCon une experiência, proximidade e organização para apoiar empresas nas rotinas contábeis, fiscais e trabalhistas.</p><p>Em Palmeira das Missões, nossa equipe trabalha lado a lado com cada cliente, buscando um atendimento claro, responsável e próximo.</p><Link className="btn btn-primary" href="/sobre">Conheça a MDCon</Link></div></div></section>
+  <section className="section about-team"><div className="container about-team-grid about-team-no-photo"><div className="about-team-copy"><span className="eyebrow">SOBRE A MDCON</span><h2>Contabilidade feita por pessoas que acompanham o seu negócio.</h2><p>A MDCon une experiência, proximidade e organização para apoiar empresas nas rotinas contábeis, fiscais e trabalhistas.</p><p>Em Palmeira das Missões, nossa equipe trabalha lado a lado com cada cliente, buscando um atendimento claro, responsável e próximo.</p><Link className="btn btn-primary" href="/sobre">Conheça a MDCon</Link></div></div></section>
 <section className="section services-premium"><div className="container">
     <div className="section-head services-title">
       <span className="eyebrow">COMO PODEMOS AJUDAR</span>
@@ -86,7 +86,7 @@ export default function Home(){return <>
       {featuredServices.map((s,index)=><article className="service-card featured-card" key={s[1]}>
         <div className="service-card-top"><span className="service-number">0{index+1}</span><i><Icon name={s[0]}/></i></div>
         <div><h3>{s[1]}</h3><p>{s[2]}</p></div>
-        <span className="service-more">Saiba mais →</span>
+        <Link className="service-more" href={s[3]}>Saiba mais →</Link>
       </article>)}
     </div>
     <div className="center"><Link className="btn btn-outline services-all" href="/servicos">Conheça todos os serviços</Link></div>
