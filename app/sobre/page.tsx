@@ -114,6 +114,38 @@ export default function Sobre() {
           line-height:1.75;
         }
 
+
+        .about-accountants{
+          padding-top:20px;
+        }
+
+        .about-accountants-list{
+          display:grid;
+          gap:18px;
+        }
+
+        .about-accountant{
+          padding-bottom:18px;
+          border-bottom:1px solid #ecece8;
+        }
+
+        .about-accountant h3{
+          margin:0 0 6px;
+          font-size:21px;
+          line-height:1.25;
+        }
+
+        .about-accountant p,
+        .about-accountants-email{
+          margin:0;
+        }
+
+        .about-accountants-email a{
+          color:#161616;
+          text-decoration:none;
+          border-bottom:1px solid ${YELLOW};
+        }
+
         .about-values{
           padding:72px 0;
           background:#fafaf8;
@@ -431,6 +463,30 @@ export default function Sobre() {
               Cada empresa possui uma realidade diferente. O atendimento parte
               dessa compreensão para orientar os serviços e as soluções de forma
               adequada ao perfil e às necessidades do cliente.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-section about-accountants">
+        <div className="about-wrap about-intro">
+          <div>
+            <span className="about-eyebrow">CONTADORES RESPONSÁVEIS</span>
+            <h2>Responsabilidade técnica e atendimento profissional.</h2>
+          </div>
+
+          <div className="about-intro-copy about-accountants-list">
+            <div className="about-accountant">
+              <h3>Diego A. M. Mafalda</h3>
+              <p>Contador — CRC/RS 067.573</p>
+            </div>
+            <div className="about-accountant">
+              <h3>Alex Santos da Silva</h3>
+              <p>Contador — CRC/RS 092.627</p>
+            </div>
+            <p className="about-accountants-email">
+              <strong>E-mail:</strong>{' '}
+              <a href="mailto:contato@mdcon.cnt.br">contato@mdcon.cnt.br</a>
             </p>
           </div>
         </div>
