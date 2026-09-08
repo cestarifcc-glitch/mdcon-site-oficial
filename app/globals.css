@@ -1210,6 +1210,8 @@ body{
 
 
 /* Temporariamente sem foto da equipe */
-.about-team-grid.about-team-no-photo{grid-template-columns:minmax(0,620px);justify-content:end}
-.about-team-no-photo .about-team-copy{width:100%}
-@media(max-width:900px){.about-team-grid.about-team-no-photo{grid-template-columns:1fr;justify-content:stretch}}
+.about-team-grid.about-team-no-photo{grid-template-columns:minmax(0,780px);justify-content:center}
+.about-team-no-photo .about-team-copy{width:100%;max-width:780px}
+.about-team-no-photo .about-team-copy h2{max-width:760px}
+.about-team-no-photo .about-team-copy p{max-width:720px}
+@media(max-width:900px){.about-team-grid.about-team-no-photo{grid-template-columns:1fr;justify-content:stretch}.about-team-no-photo .about-team-copy{max-width:none}}
